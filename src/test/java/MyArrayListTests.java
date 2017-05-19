@@ -155,7 +155,7 @@ public class MyArrayListTests {
 
     @Test
     public void addElementToIndexWithExtraCapacity() {
-        
+
         // list capacity is 10;
         MyArrayList<Integer> list = new MyArrayList<>(10);
 
@@ -257,14 +257,26 @@ public class MyArrayListTests {
         Assert.assertFalse(list.contains("bar"));
     }
 
-//    @Test
-//    public void removeTest() {
-//        MyArrayList<String> list = new MyArrayList<>();
-//        list.add("foo");
-//        list.remove("foo");
-//
-//        Assert.assertFalse(list.contains("foo"));
-//    }
+    @Test
+    public void removeTest() {
+        MyArrayList<String> list = new MyArrayList<>();
+        list.add("a");
+        list.add("b");
+        list.add("c");
+        list.add("z");
+        list.add("d");
+        list.add("e");
+
+        // list has 6 elements
+        Assert.assertEquals(6, list.size());
+
+        list.remove("z");
+
+        Assert.assertFalse(list.contains("z"));
+
+        // list has shrunk to 5
+        Assert.assertEquals(5, list.size());
+    }
 
 
 }

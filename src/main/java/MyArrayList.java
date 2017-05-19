@@ -41,14 +41,18 @@ public class MyArrayList <E> {
         size++;
     }
 
+    /* add element to specified index. If index is larger than size,
+     throw IndexOutOfBounds. Expand capacity if needed, then copy
+     contents and new index into new array.
+     */
+
     public void add(int i, E el) throws IndexOutOfBoundsException {
 
-
         if (i <= size) {
-            int newArrLen;
-            newArrLen = i <= capacity ? capacity + 1 : capacity;
-
-            Object[] newArr = new Object[newArrLen];
+            if (i <= capacity) {
+                capacity++;
+            }
+            Object[] newArr = new Object[capacity];
             Object[] front = Arrays.copyOfRange(contents, 0, i);
             Object[] end = Arrays.copyOfRange(contents, i, contents.length);
             System.arraycopy(front, 0, newArr, 0, front.length);
@@ -66,25 +70,24 @@ public class MyArrayList <E> {
         return contents[i];
     }
 
-//    public boolean remove(E el) {
-//
-//        if (contains(el)) {
-//            int index = indexOf(el);
-//            Object[] newArr = new Object[capacity];
-//            Object[] front = Arrays.copyOfRange(contents, 0, index);
-//            Object[] end = Arrays.copyOfRange(contents, index, contents.length);
-//            System.arraycopy(front, 0, newArr, 0, front.length);
-//            System.arraycopy(end, 0, newArr, front.length - 1, end.length);
-//
-//            for (Object o : newArr) {
-//                System.out.println(o);
-//            }
-//            return true;
-//        } else {
-//            return false;
-//        }
-//
-//    }
+    public boolean remove(E el) {
+
+        if (contains(el)) {
+
+            int index = indexOf(el);
+            Object[] newArr = new Object[capacity];
+            Object[] front = Arrays.copyOfRange(contents, 0, index);
+            Object[] end = Arrays.copyOfRange(contents, index + 1, contents.length);
+            System.arraycopy(front, 0, newArr, 0, front.length);
+            System.arraycopy(end, 0, newArr, front.length, end.length);
+            contents = newArr;
+            size--;
+
+            return true;
+        } else {
+            return false;
+        }
+    }
 
     public void set(int i, E el) throws IndexOutOfBoundsException {
 
@@ -109,6 +112,11 @@ public class MyArrayList <E> {
     public boolean contains(E el) {
 
         for (Object element : contents) {
+
+            //ignore null values (empty capacity at the end of the array)
+            if (element == null) {
+                break;
+            }
             if (element.equals(el)) {
                 return true;
             }
