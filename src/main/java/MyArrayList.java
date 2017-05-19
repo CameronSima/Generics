@@ -41,12 +41,10 @@ public class MyArrayList <E> {
         size++;
     }
 
-    public void add(E el, int i) throws IndexOutOfBoundsException {
+    public void add(int i, E el) throws IndexOutOfBoundsException {
 
-        if (i > size) {
-            throw new IndexOutOfBoundsException();
-        } else {
-            System.out.println(size());
+        if (i <= size) {
+
             Object[] newArr = new Object[contents.length + 1];
             Object[] front = Arrays.copyOfRange(contents, 0, i);
             Object[] end = Arrays.copyOfRange(contents, i, contents.length);
@@ -55,6 +53,9 @@ public class MyArrayList <E> {
             System.arraycopy(end, 0, newArr, front.length + 1, end.length);
             contents = newArr;
             size++;
+
+        } else {
+            throw new IndexOutOfBoundsException();
         }
     }
 
@@ -66,17 +67,24 @@ public class MyArrayList <E> {
 
     }
 
-    public void set(E el, int i) {
+    public void set(int i, E el) throws IndexOutOfBoundsException {
+
+        if (i <= size) {
+            contents[i] = el;
+        }
+        else {
+            throw new IndexOutOfBoundsException();
+        }
 
     }
 
     public void clear() {
-
+        contents = new Object[1];
+        size = 0;
     }
 
     public boolean isEmpty() {
-        return true;
-
+        return size == 0;
     }
 
     public boolean contains(E el) {

@@ -26,12 +26,67 @@ public class MyArrayListTests {
         MyArrayList<Integer> list = new MyArrayList<>();
         list.add(1);
 
-
         // list has 1 object
         Assert.assertEquals(1, list.size());
 
         // int at index 0 is 1
         Assert.assertEquals(1, list.get(0));
+    }
+
+    @Test
+    public void clearTest() {
+        MyArrayList<Integer> list = new MyArrayList<>();
+        list.add(1);
+        list.add(2);
+        list.add(3);
+        list.add(5);
+        list.clear();
+
+        Assert.assertEquals(0, list.size());
+    }
+
+    @Test
+    public void clearThenRepopulateTest() {
+        MyArrayList<Integer> list = new MyArrayList<>();
+        list.add(1);
+        list.add(2);
+        list.add(3);
+        list.add(5);
+        list.clear();
+        list.add(1);
+
+        // list has 1 element
+        Assert.assertEquals(1, list.size());
+
+        // that element is int 1
+        Assert.assertEquals(1, list.get(0));
+    }
+
+    @Test
+    public void isEmptyTrueTest() {
+        MyArrayList<String> list = new MyArrayList<>();
+
+        Assert.assertTrue(list.isEmpty());
+    }
+
+    @Test
+    public void isEmptyFalseTest() {
+        MyArrayList<String> list = new MyArrayList<>();
+        list.add("Hi");
+
+        Assert.assertFalse(list.isEmpty());
+    }
+
+    @Test
+    public void populatedThenClearedIsEmptyTest() {
+        MyArrayList<Integer> list = new MyArrayList<>();
+        list.add(1);
+        list.add(2);
+        list.add(3);
+        list.add(5);
+        list.clear();
+
+        Assert.assertTrue(list.isEmpty());
     }
 
     @Test
@@ -41,7 +96,7 @@ public class MyArrayListTests {
         MyArrayList<Integer> list = new MyArrayList<>(12);
         list.add(1);
 
-        // list has 1 element
+        // list has only 1 element
         Assert.assertEquals(1, list.size());
 
         // int at index 0 is 1
@@ -66,13 +121,18 @@ public class MyArrayListTests {
 
     @Test
     public void addElementToIndexEmptyListSize0() {
-//        // list capacity is 1;
-//        MyArrayList<Integer> list = new MyArrayList<>();
-//
-//        // add element within size
-//        list.add(1, 5);
-//
-//        Assert.assertEquals(1, list.size());
+
+        // list capacity is 1;
+        MyArrayList<Integer> list = new MyArrayList<>();
+
+        // add element within size
+        list.add(0, 1);
+
+        // list has 1 element
+        Assert.assertEquals(1, list.size());
+
+        // that element is int 1
+        Assert.assertEquals(1, list.get(0));
     }
 
     @Test(expected = IndexOutOfBoundsException.class)
@@ -82,7 +142,23 @@ public class MyArrayListTests {
         list.add(1);
         list.add(2);
         list.add(3);
-        list.add(4, 5);
+        list.add(50, 4);
+    }
+
+    @Test
+    public void canAddWithIndexAtEndOfList() {
+        MyArrayList<String> list = new MyArrayList<>();
+        list.add("this");
+        list.add("is");
+
+        // out of bounds
+        list.add(2, "a test");
+
+        // list now has 3 things
+        Assert.assertEquals(3, list.size());
+
+        // thing at index 2 is String "a test"
+        Assert.assertEquals("a test", list.get(2));
     }
 
     @Test
@@ -93,10 +169,45 @@ public class MyArrayListTests {
         list.add(3);
         list.add(5);
         list.add(6);
-        list.add(4, 3);
+        list.add(3, 4);
 
         // Item at index 3 == 4
         Assert.assertEquals(4, list.get(3));
+
+        // list has expanded to size == 6
         Assert.assertEquals(6, list.size());
     }
+
+    @Test
+    public void setTest() {
+        MyArrayList<Integer> list = new MyArrayList<>();
+        list.add(1);
+        list.add(2);
+        list.add(76);
+        list.add(5);
+        list.add(6);
+
+        list.set(2, 3);
+
+        // Item at index 2 equals 3
+        Assert.assertEquals(3, list.get(2));
+
+        // List hasn't changed size
+        Assert.assertEquals(5, list.size());
+    }
+
+    @Test(expected = IndexOutOfBoundsException.class)
+    public void setIndexOutOfBoundsTest() {
+
+        MyArrayList<String> list = new MyArrayList<>();
+        list.add("this");
+        list.add("is");
+
+        // out of bounds
+        list.set(2, "a test");
+
+
+    }
+
+
 }
