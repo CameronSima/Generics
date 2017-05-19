@@ -32,13 +32,14 @@ public class MyArrayList <E> {
     }
 
 
-    public void add(E el) {
+    public boolean add(E el) {
 
         if (atCapacity()) {
             expand();
         }
         contents[size] = el;
         size++;
+        return true;
     }
 
     /* add element to specified index. If index is larger than size,
@@ -46,7 +47,7 @@ public class MyArrayList <E> {
      contents and new index into new array.
      */
 
-    public void add(int i, E el) throws IndexOutOfBoundsException {
+    public boolean add(int i, E el) throws IndexOutOfBoundsException {
 
         if (i <= size) {
             if (i <= capacity) {
@@ -64,6 +65,7 @@ public class MyArrayList <E> {
         } else {
             throw new IndexOutOfBoundsException();
         }
+        return true;
     }
 
     public Object get(int i) throws IndexOutOfBoundsException {
