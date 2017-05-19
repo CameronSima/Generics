@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d8086bb-4b11-4524-af93-113b7a9c548e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/MyArrayList.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/MyArrayListTests.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/MyArrayList.java" afterPath="$PROJECT_DIR$/src/main/java/MyArrayList.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/MyArrayListTests.java" afterPath="$PROJECT_DIR$/src/test/java/MyArrayListTests.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -23,11 +20,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MyArrayListTests.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MyArrayListTests.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/MyArrayListTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="68" column="8" lean-forward="false" selection-start-line="68" selection-start-column="8" selection-end-line="68" selection-end-column="8" />
+            <state relative-caret-position="241">
+              <caret line="99" column="42" lean-forward="false" selection-start-line="99" selection-start-column="42" selection-end-line="99" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -35,20 +32,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyArrayList.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MyArrayList.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/MyArrayList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="53" column="30" lean-forward="false" selection-start-line="53" selection-start-column="30" selection-end-line="53" selection-end-column="30" />
+            <state relative-caret-position="196">
+              <caret line="57" column="9" lean-forward="false" selection-start-line="57" selection-start-column="9" selection-end-line="57" selection-end-column="9" />
               <folding>
-                <element signature="e#446#447#0" expanded="true" />
-                <element signature="e#485#486#0" expanded="true" />
-                <element signature="e#1229#1230#0" expanded="true" />
-                <element signature="e#1263#1264#0" expanded="true" />
-                <element signature="e#1472#1473#0" expanded="true" />
-                <element signature="e#1499#1500#0" expanded="true" />
-                <element signature="e#1524#1525#0" expanded="true" />
-                <element signature="e#1551#1552#0" expanded="true" />
+                <element signature="e#1415#1416#0" expanded="true" />
+                <element signature="e#1449#1450#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -75,8 +66,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/MyArrayList.java" />
         <option value="$PROJECT_DIR$/src/test/java/MyArrayListTests.java" />
+        <option value="$PROJECT_DIR$/src/main/java/MyArrayList.java" />
       </list>
     </option>
   </component>
@@ -87,8 +78,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="20" />
-    <option name="y" value="41" />
+    <option name="y" value="73" />
     <option name="width" value="1244" />
     <option name="height" value="709" />
   </component>
@@ -202,7 +192,7 @@
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
   </component>
-  <component name="RunManager" selected="JUnit.MyArrayListTests">
+  <component name="RunManager" selected="JUnit.MyArrayListTests.addElementToIndexLessThanSize">
     <configuration default="false" name="MyArrayListTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="Generics" />
@@ -224,48 +214,6 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="MyArrayListTests.setStringTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="Generics" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MyArrayListTests" />
-      <option name="METHOD_NAME" value="setStringTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="MyArrayListTests.instantiateWithArrayWithSpecifiedSize" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="Generics" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MyArrayListTests" />
-      <option name="METHOD_NAME" value="instantiateWithArrayWithSpecifiedSize" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
     <configuration default="false" name="MyArrayListTests.arrayNeedsToBeExpandedTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="Generics" />
@@ -274,6 +222,69 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MyArrayListTests" />
       <option name="METHOD_NAME" value="arrayNeedsToBeExpandedTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="MyArrayListTests.addElementToIndexEmptyListSize0" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="Generics" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MyArrayListTests" />
+      <option name="METHOD_NAME" value="addElementToIndexEmptyListSize0" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="MyArrayListTests.addElementToIndexLagerThanSize" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="Generics" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MyArrayListTests" />
+      <option name="METHOD_NAME" value="addElementToIndexLagerThanSize" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="MyArrayListTests.addElementToIndexLessThanSize" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="Generics" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MyArrayListTests" />
+      <option name="METHOD_NAME" value="addElementToIndexLessThanSize" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -676,18 +687,20 @@
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
-    <list size="4">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.MyArrayListTests" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.MyArrayListTests.setStringTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.MyArrayListTests.instantiateWithArrayWithSpecifiedSize" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.MyArrayListTests.arrayNeedsToBeExpandedTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.MyArrayListTests.arrayNeedsToBeExpandedTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.MyArrayListTests.addElementToIndexEmptyListSize0" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.MyArrayListTests.addElementToIndexLagerThanSize" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.MyArrayListTests.addElementToIndexLessThanSize" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.MyArrayListTests" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.MyArrayListTests.arrayNeedsToBeExpandedTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.MyArrayListTests.setStringTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.MyArrayListTests.instantiateWithArrayWithSpecifiedSize" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.MyArrayListTests.addElementToIndexLessThanSize" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.MyArrayListTests" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.MyArrayListTests.addElementToIndexLagerThanSize" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.MyArrayListTests.addElementToIndexEmptyListSize0" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.MyArrayListTests.arrayNeedsToBeExpandedTest" />
       </list>
     </recent_temporary>
   </component>
@@ -701,47 +714,47 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1495142130395</updated>
-      <workItem from="1495142134120" duration="7310000" />
+      <workItem from="1495142134120" duration="11558000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MyArrayListTests - 2017.05.18 at 18h 41m 04s.xml">
+    <history-entry file="MyArrayListTests - 2017.05.19 at 10h 59m 59s.xml">
       <configuration name="MyArrayListTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyArrayListTests - 2017.05.18 at 18h 43m 48s.xml">
-      <configuration name="MyArrayListTests" configurationId="JUnit" />
+    <history-entry file="MyArrayListTests_addElementToIndexLessThanSize - 2017.05.19 at 10h 59m 51s.xml">
+      <configuration name="MyArrayListTests.addElementToIndexLessThanSize" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyArrayListTests - 2017.05.18 at 18h 44m 07s.xml">
-      <configuration name="MyArrayListTests" configurationId="JUnit" />
+    <history-entry file="MyArrayListTests_addElementToIndexLessThanSize - 2017.05.19 at 11h 04m 36s.xml">
+      <configuration name="MyArrayListTests.addElementToIndexLessThanSize" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyArrayListTests - 2017.05.18 at 18h 45m 02s.xml">
-      <configuration name="MyArrayListTests" configurationId="JUnit" />
+    <history-entry file="MyArrayListTests_addElementToIndexLessThanSize - 2017.05.19 at 11h 05m 02s.xml">
+      <configuration name="MyArrayListTests.addElementToIndexLessThanSize" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyArrayListTests - 2017.05.18 at 18h 45m 39s.xml">
-      <configuration name="MyArrayListTests" configurationId="JUnit" />
+    <history-entry file="MyArrayListTests_addElementToIndexLessThanSize - 2017.05.19 at 11h 13m 08s.xml">
+      <configuration name="MyArrayListTests.addElementToIndexLessThanSize" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyArrayListTests - 2017.05.18 at 19h 23m 57s.xml">
-      <configuration name="MyArrayListTests" configurationId="JUnit" />
+    <history-entry file="MyArrayListTests_addElementToIndexLessThanSize - 2017.05.19 at 11h 18m 19s.xml">
+      <configuration name="MyArrayListTests.addElementToIndexLessThanSize" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyArrayListTests_arrayNeedsToBeExpandedTest - 2017.05.18 at 18h 43m 19s.xml">
-      <configuration name="MyArrayListTests.arrayNeedsToBeExpandedTest" configurationId="JUnit" />
+    <history-entry file="MyArrayListTests_addElementToIndexLessThanSize - 2017.05.19 at 11h 18m 28s.xml">
+      <configuration name="MyArrayListTests.addElementToIndexLessThanSize" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyArrayListTests_arrayNeedsToBeExpandedTest - 2017.05.18 at 18h 46m 33s.xml">
-      <configuration name="MyArrayListTests.arrayNeedsToBeExpandedTest" configurationId="JUnit" />
+    <history-entry file="MyArrayListTests_addElementToIndexLessThanSize - 2017.05.19 at 11h 20m 17s.xml">
+      <configuration name="MyArrayListTests.addElementToIndexLessThanSize" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyArrayListTests_arrayNeedsToBeExpandedTest - 2017.05.18 at 19h 23m 53s.xml">
-      <configuration name="MyArrayListTests.arrayNeedsToBeExpandedTest" configurationId="JUnit" />
+    <history-entry file="MyArrayListTests_addElementToIndexLessThanSize - 2017.05.19 at 11h 21m 13s.xml">
+      <configuration name="MyArrayListTests.addElementToIndexLessThanSize" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyArrayListTests_setStringTest - 2017.05.18 at 18h 41m 01s.xml">
-      <configuration name="MyArrayListTests.setStringTest" configurationId="JUnit" />
+    <history-entry file="MyArrayListTests_addElementToIndexLessThanSize - 2017.05.19 at 11h 21m 30s.xml">
+      <configuration name="MyArrayListTests.addElementToIndexLessThanSize" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7310000" />
+    <option name="totallyTimeSpent" value="11558000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="20" y="41" width="1244" height="709" extended-state="0" />
+    <frame x="0" y="73" width="1244" height="709" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -754,7 +767,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3546875" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -789,8 +802,26 @@
           <line>8</line>
           <properties />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/MyArrayListTests.java</url>
+          <line>87</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/MyArrayListTests.java</url>
+          <line>89</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/MyArrayListTests.java</url>
+          <line>78</line>
+          <properties class="MyArrayListTests" method="addElementToIndexLagerThanSize" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="1" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -807,29 +838,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/MyArrayList.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/src.zip!/java/util/Arrays.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="53" column="30" lean-forward="false" selection-start-line="53" selection-start-column="30" selection-end-line="53" selection-end-column="30" />
-          <folding>
-            <element signature="e#446#447#0" expanded="true" />
-            <element signature="e#485#486#0" expanded="true" />
-            <element signature="e#1229#1230#0" expanded="true" />
-            <element signature="e#1263#1264#0" expanded="true" />
-            <element signature="e#1472#1473#0" expanded="true" />
-            <element signature="e#1499#1500#0" expanded="true" />
-            <element signature="e#1524#1525#0" expanded="true" />
-            <element signature="e#1551#1552#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="133">
+          <caret line="3479" column="0" lean-forward="false" selection-start-line="3479" selection-start-column="0" selection-end-line="3479" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/MyArrayListTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="68" column="8" lean-forward="false" selection-start-line="68" selection-start-column="8" selection-end-line="68" selection-end-column="8" />
+        <state relative-caret-position="241">
+          <caret line="99" column="42" lean-forward="false" selection-start-line="99" selection-start-column="42" selection-end-line="99" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/MyArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="57" column="9" lean-forward="false" selection-start-line="57" selection-start-column="9" selection-end-line="57" selection-end-column="9" />
+          <folding>
+            <element signature="e#1415#1416#0" expanded="true" />
+            <element signature="e#1449#1450#0" expanded="true" />
           </folding>
         </state>
       </provider>

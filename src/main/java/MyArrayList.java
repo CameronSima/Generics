@@ -43,17 +43,19 @@ public class MyArrayList <E> {
 
     public void add(E el, int i) throws IndexOutOfBoundsException {
 
-        if (i < size) {
-            add(el);
+        if (i > size) {
+            throw new IndexOutOfBoundsException();
         } else {
-            Object[] front = Arrays.copyOfRange(contents, 0, i + 1);
-            front[i] = el;
+            System.out.println(size());
+            Object[] newArr = new Object[contents.length + 1];
+            Object[] front = Arrays.copyOfRange(contents, 0, i);
             Object[] end = Arrays.copyOfRange(contents, i, contents.length);
-            Object[] newArr = new Object[size + 1];
-            System.arraycopy(newArr, 0, end, 0, 0);
+            System.arraycopy(front, 0, newArr, 0, front.length);
+            newArr[i] = el;
+            System.arraycopy(end, 0, newArr, front.length + 1, end.length);
             contents = newArr;
+            size++;
         }
-
     }
 
     public Object get(int i) {
