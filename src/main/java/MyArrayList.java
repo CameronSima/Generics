@@ -43,9 +43,12 @@ public class MyArrayList <E> {
 
     public void add(int i, E el) throws IndexOutOfBoundsException {
 
-        if (i <= size) {
 
-            Object[] newArr = new Object[contents.length + 1];
+        if (i <= size) {
+            int newArrLen;
+            newArrLen = i <= capacity ? capacity + 1 : capacity;
+
+            Object[] newArr = new Object[newArrLen];
             Object[] front = Arrays.copyOfRange(contents, 0, i);
             Object[] end = Arrays.copyOfRange(contents, i, contents.length);
             System.arraycopy(front, 0, newArr, 0, front.length);
@@ -59,13 +62,29 @@ public class MyArrayList <E> {
         }
     }
 
-    public Object get(int i) {
+    public Object get(int i) throws IndexOutOfBoundsException {
         return contents[i];
     }
 
-    public void remove() {
-
-    }
+//    public boolean remove(E el) {
+//
+//        if (contains(el)) {
+//            int index = indexOf(el);
+//            Object[] newArr = new Object[capacity];
+//            Object[] front = Arrays.copyOfRange(contents, 0, index);
+//            Object[] end = Arrays.copyOfRange(contents, index, contents.length);
+//            System.arraycopy(front, 0, newArr, 0, front.length);
+//            System.arraycopy(end, 0, newArr, front.length - 1, end.length);
+//
+//            for (Object o : newArr) {
+//                System.out.println(o);
+//            }
+//            return true;
+//        } else {
+//            return false;
+//        }
+//
+//    }
 
     public void set(int i, E el) throws IndexOutOfBoundsException {
 
@@ -88,7 +107,22 @@ public class MyArrayList <E> {
     }
 
     public boolean contains(E el) {
-        return true;
+
+        for (Object element : contents) {
+            if (element.equals(el)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public int indexOf(E el) {
+        for (int i = 0; i < contents.length; i++) {
+            if (contents[i].equals(el)) {
+                return i;
+            }
+        }
+        return -1;
     }
 
     public int size() {

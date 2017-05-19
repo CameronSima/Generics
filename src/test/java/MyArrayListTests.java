@@ -8,6 +8,13 @@ import java.util.ArrayList;
  */
 public class MyArrayListTests {
 
+    @Test(expected = IndexOutOfBoundsException.class)
+    public void getOutOfBoundsTest() {
+        MyArrayList<String> list = new MyArrayList();
+
+        list.get(5);
+    }
+
     @Test
     public void setStringTest() {
 
@@ -60,6 +67,17 @@ public class MyArrayListTests {
 
         // that element is int 1
         Assert.assertEquals(1, list.get(0));
+    }
+
+    @Test
+    public void indexOfTest() {
+        MyArrayList<Integer> list = new MyArrayList<>();
+        list.add(1);
+        list.add(2);
+        list.add(3);
+
+        // element 2 is at index 1
+        Assert.assertEquals(1, list.indexOf(2));
     }
 
     @Test
@@ -124,6 +142,22 @@ public class MyArrayListTests {
 
         // list capacity is 1;
         MyArrayList<Integer> list = new MyArrayList<>();
+
+        // add element within size
+        list.add(0, 1);
+
+        // list has 1 element
+        Assert.assertEquals(1, list.size());
+
+        // that element is int 1
+        Assert.assertEquals(1, list.get(0));
+    }
+
+    @Test
+    public void addElementToIndexWithExtraCapacity() {
+        
+        // list capacity is 10;
+        MyArrayList<Integer> list = new MyArrayList<>(10);
 
         // add element within size
         list.add(0, 1);
@@ -205,9 +239,32 @@ public class MyArrayListTests {
 
         // out of bounds
         list.set(2, "a test");
-
-
     }
+
+    @Test
+    public void containsTrueTest() {
+        MyArrayList<String> list = new MyArrayList<>();
+        list.add("foo");
+
+        Assert.assertTrue(list.contains("foo"));
+    }
+
+    @Test
+    public void containsFalseTest() {
+        MyArrayList<String> list = new MyArrayList<>();
+        list.add("foo");
+
+        Assert.assertFalse(list.contains("bar"));
+    }
+
+//    @Test
+//    public void removeTest() {
+//        MyArrayList<String> list = new MyArrayList<>();
+//        list.add("foo");
+//        list.remove("foo");
+//
+//        Assert.assertFalse(list.contains("foo"));
+//    }
 
 
 }
