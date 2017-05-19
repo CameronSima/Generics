@@ -258,7 +258,7 @@ public class MyArrayListTests {
     }
 
     @Test
-    public void removeTest() {
+    public void removeElementExistsReturnTrueTest() {
         MyArrayList<String> list = new MyArrayList<>();
         list.add("a");
         list.add("b");
@@ -270,7 +270,7 @@ public class MyArrayListTests {
         // list has 6 elements
         Assert.assertEquals(6, list.size());
 
-        list.remove("z");
+        Assert.assertTrue(list.remove("z"));
 
         Assert.assertFalse(list.contains("z"));
 
@@ -278,5 +278,16 @@ public class MyArrayListTests {
         Assert.assertEquals(5, list.size());
     }
 
+    @Test
+    public void removeElementThatDoesntExistReturnsFalseTest() {
+        MyArrayList<String> list = new MyArrayList<>();
+        list.add("a");
+        list.add("b");
+        list.add("c");
+        list.add("d");
+        list.add("e");
+
+        Assert.assertFalse(list.remove("z"));
+    }
 
 }
