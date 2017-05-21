@@ -102,6 +102,51 @@ public class MySetTests {
         Assert.assertEquals(3, set.size());
     }
 
+    @Test
+    public void containsAllTrueTest() {
+        MySet<String> set = new MySet<>();
+        set.add("a");
+        set.add("b");
+        set.add("c");
+
+        ArrayList<String> newCollection = new ArrayList<>();
+        newCollection.add("a");
+        newCollection.add("b");
+        newCollection.add("c");
+
+        Assert.assertTrue(set.containsAll(newCollection));
+    }
+
+    @Test
+    public void containsAllFalseTest() {
+        MySet<String> set = new MySet<>();
+        set.add("a");
+        set.add("b");
+        set.add("c");
+
+        ArrayList<String> newCollection = new ArrayList<>();
+        newCollection.add("a");
+        newCollection.add("b");
+        newCollection.add("Z");
+
+        Assert.assertFalse(set.containsAll(newCollection));
+    }
+
+    @Test
+    public void equalsTest() {
+        MySet<String> set1 = new MySet<>();
+        set1.add("a");
+        set1.add("b");
+        set1.add("c");
+
+        MySet<String> set2 = new MySet<>();
+        set2.add("a");
+        set2.add("b");
+        set2.add("c");
+
+        //Assert.assertTrue(set1.equals(set2));
+        System.out.println(set1.equals(set2));
+    }
 
 
 
