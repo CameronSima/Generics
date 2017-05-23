@@ -161,6 +161,31 @@ public class MySetTests {
         Assert.assertArrayEquals(expectedValue, actualValue);
     }
 
+    @Test
+    public void removeTest() {
+        MySet<String> set = new MySet<>();
+        set.add("a");
+        set.add("b");
+        set.add("c");
+        set.remove("c");
 
+        Assert.assertEquals(2, set.size());
+    }
 
+    @Test
+    public void removeAllTest() {
+        MySet<String> set1 = new MySet<>();
+        set1.add("a");
+        set1.add("b");
+        set1.add("c");
+
+        MySet<String> set2 = new MySet<>();
+        set2.add("a");
+        set2.add("b");
+
+        set1.removeAll(set2);
+
+        Assert.assertEquals(1, set2.size());
+
+    }
 }

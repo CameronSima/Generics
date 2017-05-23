@@ -126,8 +126,12 @@ public class MyArrayList <E> {
         return false;
     }
 
-    protected Object[] getContents() {
+    protected  Object[] getContents() {
         return contents;
+    }
+
+    protected void setContents(Object[] o) {
+        contents = o;
     }
 
     public int indexOf(E el) {

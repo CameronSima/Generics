@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.Set;
@@ -31,7 +32,11 @@ public class MySet<E> extends MyArrayList<E> implements Set<E> {
 
     @Override
     public <T> T[] toArray(T[] a) {
-        return null;
+        if (a.length < size()) {
+            return (T[]) Arrays.copyOf(getContents(), size(), a.getClass());
+        }
+        System.arraycopy(getContents(), 0, a, 0, size());
+        return a;
     }
 
     @Override
@@ -46,7 +51,21 @@ public class MySet<E> extends MyArrayList<E> implements Set<E> {
 
     @Override
     public boolean removeAll(Collection<?> c) {
-        return false;
+        Iterator<?> iterator = c.iterator();
+        int len = size() - c.size();
+        boolean contains = false;
+
+        Object[] newArr = new Object[len];
+
+        int index = 0;
+        while (iterator.hasNext()) {
+            if (contains(iterator.next())) {
+                contains = true;
+                newArr[index] = iterator.next();
+                index++;
+            }
+        }
+        return contains;
     }
 
     @Override
