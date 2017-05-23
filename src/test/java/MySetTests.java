@@ -148,6 +148,19 @@ public class MySetTests {
         System.out.println(set1.equals(set2));
     }
 
+    @Test
+    public void toArrayTest() {
+        MySet<String> set = new MySet<>();
+        set.add("a");
+        set.add("b");
+        set.add("c");
+
+        Object[] expectedValue = { "a", "b", "c"};
+        Object[] actualValue = set.toArray();
+
+        Assert.assertArrayEquals(expectedValue, actualValue);
+    }
+
 
 
 }

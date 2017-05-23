@@ -126,6 +126,10 @@ public class MyArrayList <E> {
         return false;
     }
 
+    protected Object[] getContents() {
+        return contents;
+    }
+
     public int indexOf(E el) {
         for (int i = 0; i < contents.length; i++) {
             if (contents[i].equals(el)) {
